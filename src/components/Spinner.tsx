@@ -10,14 +10,14 @@ function Spinner(): ReactNode {
           animate-spin
           rounded-full
           border-4
-          border-gray-200
-          border-t-[#3a2418]
+          border-[#DCE9DF]
+          border-t-[#15803D]
         "
         aria-label="Loading"
         role="status"
       />
 
-      <p className="text-sm text-gray-600">
+      <p className="text-sm font-medium text-[#526158]">
         Preparing your avatar...
       </p>
     </div>

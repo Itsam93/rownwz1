@@ -34,12 +34,6 @@ export interface AvatarFrameConfig {
   copiesSponsored: AvatarCopiesConfig;
 }
 
-/*
-|--------------------------------------------------------------------------
-| Avatar Frame Configurations
-|--------------------------------------------------------------------------
-*/
-
 export const avatarFrames = {
   rown: {
     canvasSize: 1536,
