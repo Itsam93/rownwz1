@@ -575,11 +575,16 @@ const AvatarCanvas = forwardRef<
           context.font =
             `${labelFontWeight} ${labelFontSize}px ${labelFontFamily}`;
 
+          const labelY =
+            textY +
+            fontSize / 2 +
+            copiesConfig.labelGap +
+            labelFontSize / 2;
+
           context.fillText(
             "Copies",
             textX,
-            textY +
-              fontSize * 0.72
+            labelY
           );
         } catch (error) {
           if (!cancelled) {

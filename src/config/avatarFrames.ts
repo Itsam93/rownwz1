@@ -12,6 +12,7 @@ export interface AvatarCopiesConfig {
 
   fontSize: number;
   labelFontSize: number;
+  labelGap: number;
 
   color?: string;
   labelColor?: string;
@@ -48,16 +49,19 @@ export const avatarFrames = {
 
     copiesSponsored: {
       x: 1330,
-      y: 705,
+      y: 750,
 
-      fontSize: 70,
+      fontSize: 75,
       labelFontSize: 42,
+      labelGap: 10,
 
       color: "#FFFFFF",
-      labelColor: "#021f14",
+      labelColor: "#FFFFFF",
 
-      fontFamily: '"Arial Black", Arial, sans-serif',
-      labelFontFamily: "Arial, sans-serif",
+      fontFamily:
+        '"Arial Black", Arial, sans-serif',
+      labelFontFamily:
+        "Arial, sans-serif",
 
       fontWeight: 900,
       labelFontWeight: 700,
