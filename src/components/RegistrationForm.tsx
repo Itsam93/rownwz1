@@ -1,6 +1,8 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
 
+import logo from "../assets/logo.png";
+
 import Spinner from "./Spinner";
 
 export interface AvatarRegistration {
@@ -221,35 +223,20 @@ export default function RegistrationForm({
           }
         >
           <div className="mb-9 text-center">
-            <div
+            <img
+              src={logo}
+              alt="ROWN"
               className="
                 mx-auto
-                mb-5
-                flex
-                h-16
-                w-16
-                items-center
-                justify-center
-                rounded-2xl
-                bg-[#EAF6ED]
-                text-[#15803D]
+                mb-7
+                h-24
+                w-auto
+                max-w-[240px]
+                object-contain
+                sm:h-28
+                sm:max-w-[280px]
               "
-              aria-hidden="true"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="h-8 w-8"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M12 3v12" />
-                <path d="m7 10 5 5 5-5" />
-                <path d="M5 21h14" />
-              </svg>
-            </div>
+            />
 
             <p
               className="
